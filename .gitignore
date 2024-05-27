@@ -1,32 +1,107 @@
-# Prerequisites
+# IDE or Build Generated Files
+
+## CMake
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+
+## Autotools
+Makefile
+aclocal.m4
+autoconf.Makefile
+configure
+depcache.in
+install-sh
+m4/
+Makefile.in
+
+## Visual Studio
+*.suo
+*.sln
+*.vcxproj
+*.vcxbuildefg
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.user
+*.dat
+*.adf
+*.res
+
+## Other IDEs
+*.IDEA/
+*.vscode/
+*.project
+*.pydevproject
+
+## Build output
+
+bin/
+obj/
+Debug/
+Release/
+
+## Cache/Logs
+
+*.log
+*.cache
+*.tmp
+*.swp
+*.DS_Store
+
+## Documentation
+
+doc/
+html/
+man/
+pdf/
+
+## Tests
+
+test/
+unit_tests/
+integration_tests/
+
+## Dependencies
+
+# Package managers
+node_modules/
+vendor/
+bower_components/
+yarn.lock
+package-lock.json
+
+# Third party libraries
+lib/
+external/
+include/
+
+## Generated code
+
+*.moc
+*.o
 *.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+## Misc
 
-# Precompiled Headers
-*.gch
-*.pch
+*.gitignore
+*.gitattributes
+README.md
+CONTRIBUTING.md
+LICENSE
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Volumes (ensure data persistence outside version control)
+volumes/
 
-# Fortran module files
-*.mod
-*.smod
+# Build context (exclude unnecessary files for image building)
+build/.[!gitignore]  # Ignore everything in build/ except .gitignore
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# IDE/build related files within docker context (optional)
+build/CMakeFiles/  # Adjust based on your build system
 
-# Executables
-*.exe
-*.out
-*.app
+# Cached layers (avoids bloating repository)
+.dockerenv/  # Specific docker environment files
+
+# Dependency management within docker (avoids version control conflicts)
+dependencies/  # Adjust based on your dependency management strategy
