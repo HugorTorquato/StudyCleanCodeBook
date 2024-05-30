@@ -18,16 +18,23 @@ RUN cmake -H. -Bbuild && cmake --build build && apt-get update && apt-get instal
 # Copy all files to the working directory in the container
 WORKDIR /app
 COPY /code/* .
+
 # This line builds your C++ code using g++ and creates an executable named hello.
-#RUN g++ main.cpp -o hello
-# Link with gtest libraries
+# It needs to create one for the code itself and another one for the unittests
+    # To run tem open the attach shell, go to the working directory and execute the files
+    # ./main
+    # ./main_tests
 
-RUN g++ main.cpp -o listing2 -lgtest -lgtest_main  
-
+RUN g++ main.cpp -o main -lgtest -lgtest_main -lpthread
+RUN g++ test.cpp -o main_tests -lgtest -lgtest_main -lpthread
 
 
 #This line defines the default command to run when the container starts. It specifies the path to your executable inside the container.
 #CMD ["/app/hello"]
-CMD ["/app/listing2", "--gtest_filter=*.Test"]
 
-#CMD ["tail", "-f", "/path/to/logfile.log"]
+#ENTRYPOINT ["/app/main", "/app/main_tests --gtest_filter=*"]
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]
+
+
+

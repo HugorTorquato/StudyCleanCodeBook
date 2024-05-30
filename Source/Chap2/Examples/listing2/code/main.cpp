@@ -55,6 +55,8 @@
 #include <iostream>
 
 #include "freeFunctionToRefactory.cpp"
+#include "test.cpp"
+
 using namespace std;
 
 int main() {
@@ -68,3 +70,6 @@ int main() {
 
 // docker build -t listing2 .
 // docker run --rm listing2 
+
+// Open the bash in the terminal
+// docker run -it my_image_name /bin/bash
