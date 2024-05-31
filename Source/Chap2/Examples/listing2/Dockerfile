@@ -25,8 +25,8 @@ COPY /code/* .
     # ./main
     # ./main_tests
 
-RUN g++ main.cpp -o main -lgtest -lgtest_main -lpthread
-RUN g++ test.cpp -o main_tests -lgtest -lgtest_main -lpthread
+RUN g++ main.cpp -o main 
+RUN g++ GuessStatisticsTests.cpp -o main_tests -lgtest -lgtest_main -lpthread
 
 
 #This line defines the default command to run when the container starts. It specifies the path to your executable inside the container.
@@ -34,7 +34,7 @@ RUN g++ test.cpp -o main_tests -lgtest -lgtest_main -lpthread
 
 #ENTRYPOINT ["/app/main", "/app/main_tests --gtest_filter=*"]
 
-ENTRYPOINT ["tail", "-f", "/dev/null"]
+#ENTRYPOINT ["tail", "-f", "/dev/null"]
 
 
 

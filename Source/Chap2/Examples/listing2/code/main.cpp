@@ -55,7 +55,7 @@
 #include <iostream>
 
 #include "freeFunctionToRefactory.cpp"
-#include "test.cpp"
+#include "GuessStatistics.hpp"
 
 using namespace std;
 
