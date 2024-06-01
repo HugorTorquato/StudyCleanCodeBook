@@ -56,13 +56,18 @@
 
 #include "freeFunctionToRefactory.cpp"
 #include "GuessStatistics.hpp"
+#include "GuessStatistics.cpp"
 
 using namespace std;
 
 int main() {
-  std::cout << "Hello, world2!" << std::endl;
+  std::cout << "Hello, world!" << std::endl;
 
-  printGuessStatistics("candidates", 3);
+  printGuessStatistics("candidate", 3);
+
+  string message = displayNumberPerCategory("candidate", 2);
+
+  std::cout << message << endl;
 
   return 0;
 }
