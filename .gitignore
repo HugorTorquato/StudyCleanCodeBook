@@ -105,3 +105,240 @@ build/CMakeFiles/  # Adjust based on your build system
 
 # Dependency management within docker (avoids version control conflicts)
 dependencies/  # Adjust based on your dependency management strategy
+
+
+
+# Visual Studio
+.vscode/
+.vscode/*
+.vs/
+.vs/*
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio Code - Directories
+.vscode/*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folders
+[Ee]xternals/
+[Ss]taging/
+*.code-workspace
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (Mono Auto Generated)
+mono_crash.*
+
+# User-specific files (VSCode)
+.vscode/*
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudio
+
+
+
+
+
+
+
+# Visual Studio
+.vscode/
+.vscode/*
+.vs/
+.vs/*
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.testlog
+*.manifest
+.sqlite
+
+# Backup & report files
+*.bak
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.stackdump
+*.vscode/
+*.code-workspace
+
+# Database files
+*.sqlite
+*.sql
+*.dump
+
+# Language-specific
+*.swp
+*.swo
+*.class
+*.pyc
+*.pyo
+*.pyd
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Compiled source files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+*.pyo
+
+# Ignored directories
+/build/
+*.dSYM
+*.egg-info/
+*.DS_Store
+.idea
+.vscode
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# C++
+*.obj
+*.o
+*.so
+*.exe
+*.out
+*.a
+*.lib
+*.dll
+*.c
+*.cpp
+*.h
+*.hpp
+*.cc
+*.cxx
+*.hh
+
+# CMake
+CMakeLists.txt.user
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+build/
+CTestTestfile.cmake
+Testing/
+
+# gmock and gtest
+gtest/
+gmock/
+
+# General
+*.log
+*.log.*
+*.log~*
+*.bak
+*.swp
+*.swo
+*.swn
+*.bak
+*.backup
+*~
+*.pyc
+*.pyo
+__pycache__/
+tags
+
+# Build artifacts
+*.obj
+*.pch
+*.pdb
+*.idb
+*.tlog
+*.lastbuildstate
+*.sdf
+*.ipch
+*.iobj
+*.idb
+*.ipdb
+*.ilk
+*.log
+*.vscode/
+*.psess
+*.pyproj
+*.pyc
+*.pyo
+*.egg-info/
+.Python
+__pycache__/
+
+# C++ tools specific
+*.d
+*.d.*
+*.ll
+*.s
+*.spec
+*.specs
+*.module.map
+*.obj
+*.o
+*.lst
+*.su
+*.utx
+
+# Fortran specific
+*.mod
+
+# IDE specific
+.idea/
+*.iml
+*.ipr
+*.iws
+*.dSYM
+*.class
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Folder Structure
+Source\Chap3\listing3-4\listing3-4/.vs
+Source\Chap3\listing3-4\listing3-4/.vscode
+Source\Chap3\listing3-4\listing3-4/MainApp/Debug/
+Source\Chap3\listing3-4\listing3-4/MainApp/Release/
+Source\Chap3\listing3-4\listing3-4/MainApp/x64/
+Source\Chap3\listing3-4\listing3-4/MainApp/x86/
+Source\Chap3\listing3-4\listing3-4/MainApp/bin/
+Source\Chap3\listing3-4\listing3-4/MainApp/obj/
+Source\Chap3\listing3-4\listing3-4/UnitTests/Debug/
+Source\Chap3\listing3-4\listing3-4/UnitTests/Release/
+Source\Chap3\listing3-4\listing3-4/UnitTests/x64/
+Source\Chap3\listing3-4\listing3-4/UnitTests/x86/
+Source\Chap3\listing3-4\listing3-4/UnitTests/bin/
+Source\Chap3\listing3-4\listing3-4/UnitTests/obj/
+
+
+
+
