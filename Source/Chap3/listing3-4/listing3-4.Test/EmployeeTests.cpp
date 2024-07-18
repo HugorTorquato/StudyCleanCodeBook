@@ -18,6 +18,19 @@ void EmployeeTests::TearDown()
 
 TEST_F(EmployeeTests, simpleObjectPropertyValidation) {
 
-	imp.type = Comissioned;
-	EXPECT_EQ(imp.type, Comissioned);
+	imp.type = ComissionedEnum;
+	EXPECT_EQ(imp.type, ComissionedEnum);
+}
+
+TEST_F(EmployeeTests, validadeBaseClassIsPayDayOutput) {
+
+	EXPECT_EQ(imp.isPayDay(), false);
+}
+TEST_F(EmployeeTests, validadeBaseClassCalculatePayOutput) {
+
+	EXPECT_EQ(imp.calculatePay(), 0.0);
+}
+TEST_F(EmployeeTests, validadeBaseClassDeliverPayOutput) {
+
+	EXPECT_EQ(imp.deliverPay(), false);
 }

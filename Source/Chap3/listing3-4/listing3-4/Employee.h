@@ -2,9 +2,9 @@
 
 enum employeeType
 {
-	Comissioned,
-	Hourly,
-	Salaried
+	ComissionedEnum,
+	HourlyEnum,
+	SalariedEnum
 };
 
 
@@ -18,4 +18,4 @@ public:
 	virtual bool deliverPay() const;
 
 	employeeType type;
-}
+};
